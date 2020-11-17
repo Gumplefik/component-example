@@ -1,0 +1,27 @@
+{
+  "name": "component-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --config build/webpack.config.base.js",
+    "lib": "webpack --config build/webpack.config.lib.js",
+    "theme": "gulp build --gulpfile packages/theme-chalk/gulpfile.js && cp-cli packages/theme-chalk/lib lib/theme-chalk"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.2.1",
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.0",
+    "vue": "2.6.12",
+    "vue-loader": "15.9.5",
+    "vue-template-compiler": "2.6.12",
+    "webpack": "4.44.2",
+    "webpack-cli": "3.3.2",
+    "webpack-dev-server": "3.5.1"
+  }
+}
