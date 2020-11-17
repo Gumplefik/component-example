@@ -3,6 +3,8 @@ import App from './index.vue'
 
 import ExampleComponent from '../lib/component-example'
 
+import '../lib/theme/index.css'
+
 Vue.use(ExampleComponent)
 
 
